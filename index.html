@@ -17,13 +17,16 @@
 <body>
     <div class="container">
         <div class="artplayer-app"></div>
-        <p class="tip"></p>
     </div>
     <script src="./assets/js/core.js"></script>
     <script src="./assets/js/fetch.polyfill.js"></script>
+    <script src="./assets/js/encoding-indexes.js"></script>
+    <script src="./assets/js/encoding.js"></script>
+
     <script src="./assets/js/vconsole.min.js"></script>
     <script src="./uncompiled/artplayer.js?t=6"></script>
     <script>
+        var vConsole = new VConsole();
         setTimeout(function () {
             var script = document.createElement('script');
             script.src = './assets/js/index.js?=' + Date.now();

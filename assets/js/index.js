@@ -1,5 +1,3 @@
-var vConsole = new VConsole();
-
 var art = new Artplayer({
   container: ".artplayer-app",
   url: "./assets/sample/video.mp4",
@@ -85,14 +83,14 @@ var art = new Artplayer({
     height: 90,
     column: 10,
   },
-  //   subtitle: {
-  //     url: "./assets/sample/subtitle.srt",
-  //     style: {
-  //       color: "#03A9F4",
-  //     },
-  //     encoding: "utf-8",
-  //     bilingual: true,
-  //   },
+  subtitle: {
+    url: "./assets/sample/subtitle.srt",
+    style: {
+      color: "#03A9F4",
+    },
+    encoding: "utf-8",
+    bilingual: true,
+  },
   highlight: [
     {
       time: 60,
