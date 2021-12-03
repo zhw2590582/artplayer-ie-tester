@@ -22,7 +22,11 @@
     <script src="./assets/js/core.js"></script>
     <script src="./assets/js/vconsole.min.js"></script>
     <script src="./uncompiled/artplayer.js?t=6"></script>
-    <script src="./assets/js/index.js"></script>
+    <script>
+        var script = document.createElement('script');
+        script.src = './assets/js/index.js?=' + Date.now();
+        document.head.appendChild(script);
+    </script>
 </body>
 
 </html>
